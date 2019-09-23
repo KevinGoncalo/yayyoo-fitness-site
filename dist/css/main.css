@@ -456,10 +456,10 @@ section .container .info-container {
     body #showcase {
       width: 100vw; }
       body #showcase .showcase-content h1 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-bottom: 1rem; }
       body #showcase .showcase-content p {
-        font-size: 0.75rem; }
+        font-size: 0.9rem; }
     body section .container {
       margin: 0;
       padding-left: 1rem;
