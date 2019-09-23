@@ -139,13 +139,15 @@
       width: 100vw;
 
       .showcase-content {
+        overflow: scroll;
+
         h1 {
-          font-size: 1.3rem;
+          font-size: 1rem;
           margin-bottom: 1rem;
         }
 
         p {
-          font-size: 1rem;
+          font-size: 75rem;
         }
       }
     }

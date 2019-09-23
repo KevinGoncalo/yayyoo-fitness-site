@@ -455,11 +455,13 @@ section .container .info-container {
         align-items: center; }
     body #showcase {
       width: 100vw; }
-      body #showcase .showcase-content h1 {
-        font-size: 1.3rem;
-        margin-bottom: 1rem; }
-      body #showcase .showcase-content p {
-        font-size: 1rem; }
+      body #showcase .showcase-content {
+        overflow: scroll; }
+        body #showcase .showcase-content h1 {
+          font-size: 1rem;
+          margin-bottom: 1rem; }
+        body #showcase .showcase-content p {
+          font-size: 75rem; }
     body section .container {
       margin: 0;
       padding-left: 1rem;
