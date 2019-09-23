@@ -459,7 +459,7 @@ section .container .info-container {
         font-size: 1rem;
         margin-bottom: 1rem; }
       body #showcase .showcase-content p {
-        font-size: 75rem; }
+        font-size: 0.75rem; }
     body section .container {
       margin: 0;
       padding-left: 1rem;
