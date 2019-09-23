@@ -1,0 +1,56 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: $main-color;
+  color: $light-color;
+  padding: 1.5rem 2.5rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+
+  &-light {
+    background: var($light-color);
+  }
+
+  &-primary {
+    background: var($main-color);
+  }
+
+  &-secondary {
+    background: var($dark-color);
+  }
+
+  &-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.bottom-line {
+  height: 2px;
+  width: 50%;
+  background: $main-color;
+  display: block;
+  margin: 2rem auto 2rem auto;
+}
+
+.bottom-line2 {
+  height: 2px;
+  width: 75%;
+  background: $light-color;
+  display: block;
+  margin: 2rem auto 2rem auto;
+}

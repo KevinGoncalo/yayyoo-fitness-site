@@ -1,0 +1,284 @@
+// Tablets & Smaller
+@media (max-width: 800px) {
+  #main-nav {
+    height: 100%;
+    width: 100vw;
+
+    li {
+      a {
+        border-bottom: none;
+      }
+    }
+  }
+
+  section {
+    .container {
+      .info-container {
+        display: flex;
+        flex-direction: column;
+
+        .info-item2 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  #section-c {
+    .container {
+      .info-container {
+        display: flex;
+
+        .info-item4 {
+          height: 50vh;
+          margin-bottom: 1rem;
+        }
+
+        .info-item5 {
+          margin-bottom: 1rem;
+        }
+
+        .info-item6 {
+          height: 50vh;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  #about-section-a {
+    .about-container {
+      display: flex;
+      flex-direction: column;
+
+      .about-item1 {
+        margin-bottom: 1rem;
+      }
+
+      .about-item2 {
+        align-items: center;
+        margin-left: 0;
+      }
+    }
+  }
+
+  #about-section-b {
+    .container {
+      .info-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .info-item4 {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+
+        iframe {
+          width: 100%;
+        }
+      }
+
+      .info-item5,
+      .info-item6 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  #section-schedule {
+    height: 72vh;
+
+    .schedule-container {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    .container-grid {
+      padding: 0 2rem;
+
+      ul {
+        font-size: 0.75rem;
+
+        .li-heading {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  #contact {
+    &-a {
+      height: 72vh;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Smart Phones
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+
+    #main-nav {
+      height: 100%;
+      width: 100vw;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    #showcase {
+      width: 100vw;
+
+      .showcase-content {
+        h1 {
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    section {
+      .container {
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+
+    #section-c {
+      .container {
+        margin: 0;
+        padding: 1rem;
+
+        .info-container {
+          padding: 1rem;
+          margin: 0;
+          // margin-top: 1rem;
+
+          .info-item4,
+          .info-item5,
+          .info-item6,
+          .info-item7 {
+            width: 100%;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+    #section {
+      &-d {
+        margin: 0 1rem;
+
+        h2 {
+          font-size: 1rem;
+        }
+
+        .reviews-container {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    #main-footer {
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    // About
+    #about-section-a {
+      .about-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1rem;
+      }
+    }
+
+    #about-section-b {
+      .container {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0;
+
+        .info-container {
+          margin: 0;
+          padding: 1rem;
+
+          .info-item6 {
+            display: none;
+          }
+        }
+      }
+    }
+    // Class Schedule
+    #section-schedule {
+      margin: 1rem;
+      overflow: auto;
+
+      .schedule-container {
+        overflow: hidden;
+
+        h1 {
+          font-size: 2rem;
+          padding-top: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        .container-grid {
+          display: flex;
+          flex-direction: column;
+
+          ul {
+            font-size: 0.75rem;
+            padding: 0;
+
+            :last-child {
+              margin-bottom: 1rem;
+            }
+
+            .li-heading {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+    // Form
+    #contact {
+      &-a {
+        margin: 1rem;
+        overflow: auto;
+
+        .text-fields {
+          display: flex;
+          flex-direction: column;
+
+          .subject-input,
+          .email-input,
+          .phone-input,
+          .message-input {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

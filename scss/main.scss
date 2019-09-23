@@ -1,0 +1,530 @@
+@import "config";
+@import "utilities";
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $light-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+// Logo
+#logo {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1rem;
+}
+
+// Main Nav
+#main-nav {
+  display: grid;
+  grid-template-columns: 4fr 0.5fr 4fr;
+  padding-top: 1rem;
+  background: $dark-color;
+  top: 0;
+  position: sticky;
+  z-index: 2;
+
+  ul {
+    display: flex;
+    align-content: space-between;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: $light-color;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.5s;
+
+      &:hover {
+        border-color: $light-color;
+      }
+
+      &.current {
+        border-color: $main-color;
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+  }
+
+  i {
+    margin: 1rem 0.5rem;
+    border: none;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+
+// Showcase
+#showcase {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#showcase:before {
+  content: "";
+  background: url(../img/gym1.JPG) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.12;
+}
+
+#showcase .showcase-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  text-align: center;
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    font-size: 6rem;
+    font-weight: bold;
+  }
+
+  h1 span {
+    color: $main-color;
+  }
+}
+
+#showcase .showcase-content p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+  span {
+    color: $main-color;
+  }
+}
+
+// Section B
+section {
+  .container {
+    .info-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+      margin-top: 1rem;
+
+      .info-item1 {
+        margin-top: 3rem;
+
+        h2 {
+          text-align: center;
+          font-size: 1rem;
+          text-decoration: underline;
+          margin-bottom: 1rem;
+        }
+
+        span {
+          color: $main-color;
+        }
+
+        p {
+          margin-bottom: 1.25rem;
+        }
+      }
+
+      .info-item2 {
+        background: url(../img/yayyoo1.jpeg) no-repeat top center/cover;
+        height: 80vh;
+      }
+
+      .info-item3 {
+        background: $main-color;
+        padding: 3rem;
+        border-radius: 15px;
+
+        h2 {
+          color: $light-color;
+          font-size: 2rem;
+          text-align: center;
+          font-weight: bolder;
+        }
+
+        ul {
+          li {
+            font-size: 1.25rem;
+            margin: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Section C
+#section-c {
+  .container {
+    .info-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+      background: $main-color;
+      margin: 1rem;
+      height: 100%;
+      padding: 2rem;
+      border-radius: 15px;
+
+      .info-item4 {
+        background: url(../img/adult-muay-thai.jpg) no-repeat center
+          center/cover;
+        height: 100%;
+        padding: 3rem;
+        border-radius: 15px;
+      }
+
+      .info-item5 {
+        background: url(../img/gym2.JPG) no-repeat center center/cover;
+        height: 50vh;
+        padding: 3rem;
+        border-radius: 15px;
+      }
+
+      .info-item6 {
+        background: url(../img/youth-muay-thai.jpg) no-repeat center
+          center/cover;
+        height: 100%;
+        padding: 3rem;
+        border-radius: 15px;
+      }
+
+      .info-item7 {
+        background: url(../img/gym3.JPG) no-repeat center center/cover;
+        height: 50vh;
+        padding: 3rem;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+// Section D
+#section {
+  &-d {
+    background: $dark-color;
+    color: $light-color;
+    margin: 0 3rem;
+    border-radius: 15px;
+
+    h2 {
+      text-align: center;
+      padding-top: 2rem;
+    }
+
+    .reviews-container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+
+      .review1,
+      .review2,
+      .review3,
+      .review4,
+      .review5,
+      .review6 {
+        font-style: italic;
+        padding: 0;
+        margin: 0.5rem;
+      }
+    }
+  }
+}
+
+// Footer
+#main-footer {
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: $dark-color;
+  color: $light-color;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+      color: $main-color;
+    }
+
+    .socials {
+      display: flex;
+    }
+
+    i {
+      margin: 1rem 0.5rem;
+      border: none;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    text-align: center;
+
+    .highlight {
+      color: $main-color;
+    }
+  }
+}
+
+// About Page
+#about-section-a {
+  .about-container {
+    display: flex;
+    justify-content: center;
+
+    background: $dark-color;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 2rem;
+    border-radius: 15px;
+
+    .about-item1 {
+      background: url("../img/reading-to-kids.jpg") no-repeat center
+        center/cover;
+      height: 100vh;
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .about-item2 {
+      background: $light-color;
+      padding-top: 1rem;
+      margin-left: 2rem;
+      border-radius: 15px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin: 1rem;
+    }
+
+    h2 {
+      text-decoration: underline;
+      margin-left: 1rem;
+    }
+
+    span {
+      color: $main-color;
+    }
+  }
+}
+
+#about-section-b {
+  .container {
+    .info-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      background: $main-color;
+      height: 100%;
+      padding: 2rem;
+      border-radius: 15px;
+
+      .info-item4 {
+        height: 100%;
+
+        iframe {
+          border-radius: 15px;
+        }
+      }
+
+      .info-item5 {
+        background: url(../img/winner-yayyoo.jpg) no-repeat left center/cover;
+        height: 65vh;
+        width: 100%;
+        padding: 3rem;
+        border-radius: 15px;
+      }
+
+      .info-item6 {
+        background: url(../img/yayyoo-fight1.jpg) no-repeat right center/cover;
+        height: 65vh;
+        padding: 3rem;
+        border-radius: 15px;
+      }
+
+      .info-item7 {
+        background: url(../img/yayyoo-fight2.jpg) no-repeat center top/cover;
+        height: 65vh;
+        padding: 3rem;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+// Class Schedule
+#section-schedule {
+  background: $dark-color;
+  margin: 1rem 3rem;
+  border-radius: 15px;
+
+  .schedule-container {
+    h1 {
+      color: $light-color;
+      text-align: center;
+      font-size: 4rem;
+      text-decoration: underline;
+      padding-top: 2rem;
+    }
+
+    p {
+      color: $light-color;
+      font-size: 1.25rem;
+      text-align: center;
+      padding-bottom: 2rem;
+
+      a {
+        color: $main-color;
+      }
+    }
+
+    .container-grid {
+      display: flex;
+      justify-content: center;
+
+      .day1 {
+        .li-heading,
+        li {
+          border-left: 0.15rem solid $dark-color;
+        }
+      }
+
+      ul {
+        font-size: 1.15rem;
+
+        :last-child {
+          margin-bottom: 2rem;
+        }
+
+        .li-heading {
+          background: $main-color;
+          font-size: 2rem;
+          border: 0.15rem solid $dark-color;
+          margin-top: 2rem;
+          border-left: none;
+        }
+
+        li {
+          background: $light-color;
+          border: 0.15rem solid $dark-color;
+          border-top: none;
+          padding: 1rem;
+          border-left: none;
+        }
+      }
+    }
+  }
+}
+
+// Form
+#contact {
+  &-a {
+    background: $dark-color;
+    margin: 1rem 3rem;
+    border-radius: 15px;
+
+    h2 {
+      color: $light-color;
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 2rem;
+    }
+
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        "name email"
+        "subject phone"
+        "message message";
+      grid-gap: 1.2rem;
+      margin-bottom: 1.2rem;
+
+      // Grid Areas
+      .name-input {
+        grid-area: name;
+        border-radius: 5px;
+      }
+      .subject-input {
+        grid-area: subject;
+        border-radius: 5px;
+      }
+      .email-input {
+        grid-area: email;
+        border-radius: 5px;
+      }
+      .phone-input {
+        grid-area: phone;
+        border-radius: 5px;
+      }
+      .message-input {
+        grid-area: message;
+        height: 100px;
+        border-radius: 5px;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+    button[type="submit"] {
+      display: block;
+      margin: 20px auto;
+      width: 50%;
+      margin-bottom: 3.75rem;
+    }
+  }
+}
+
+// Import Media Queries
+@import "media";
