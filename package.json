@@ -7,7 +7,7 @@
     "node": "20.x"
   },
   "scripts": {
-    "build": "sass scss/main.scss css/main.css --style=compressed",
+    "build": "sass scss/main.scss dist/css/main.css --style=compressed",
     "dev": "sass --watch scss/main.scss:css/main.css"
   },
   "author": "",

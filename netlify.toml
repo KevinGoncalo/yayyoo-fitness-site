@@ -1,6 +1,5 @@
 [build]
     command = "npm run build"
-    publish = "."
-[build.environment]
-    NETLIFY_SKIP_INSTALL = "true"
+    publish = "dist"
+[context.production.environment]
     NODE_VERSION = "20"
