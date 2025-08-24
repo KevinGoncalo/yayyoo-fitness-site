@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Yayyoo Fitness MMA Website",
   "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
