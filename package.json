@@ -7,14 +7,16 @@
     "node": "20.x"
   },
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "build": "sass scss/main.scss css/main.css --style=compressed",
+    "dev": "sass --watch scss/main.scss:css/main.css"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.12.0"
-  },
   "dependencies": {
+    "firebase": "^12.1.0",
     "minimist": ">=1.2.2"
+  },
+  "devDependencies": {
+    "sass": "^1.90.0"
   }
 }
